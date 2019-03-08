@@ -15,6 +15,7 @@ COPY entrypoint.sh /
 ENV HOME=/config
 
 RUN set -x && \
+    chmod +x /entrypoint.sh && \
     chmod +x /usr/local/bin/kubectl && \
     \
     # Basic check it works.
