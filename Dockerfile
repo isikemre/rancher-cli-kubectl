@@ -1,4 +1,4 @@
-FROM rancher/cli:v2.0.4
+FROM rancher/cli2:v2.3.0
 LABEL maintainer="e.isik27@gmail.com"
 
 # Dependencies
@@ -7,7 +7,7 @@ RUN apk add --no-cache curl ca-certificates
 # Install kubectl
 # Note: Latest version may be found on:
 # https://aur.archlinux.org/packages/kubectl-bin/
-RUN curl https://storage.googleapis.com/kubernetes-release/release/v1.6.4/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl -s
+RUN curl https://storage.googleapis.com/kubernetes-release/release/v1.16.2/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl -s
 
 # Custom Entrypoint
 COPY entrypoint.sh /
