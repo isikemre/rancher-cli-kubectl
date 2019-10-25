@@ -1,4 +1,4 @@
-FROM rancher/cli2:v2.3.0
+FROM rancher/cli2:v2.2.0
 LABEL maintainer="e.isik27@gmail.com"
 
 # Dependencies
